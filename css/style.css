@@ -1,0 +1,221 @@
+:root {
+  --border-radius: 6px;
+  --textBrand: #1b4de4;
+  --textBrandDark: #039;
+  --textDefault: #2b2b2b;
+  --textDark: #000;
+  --textMedium: #2b2b2b;
+  --textBgMedium: #383838;
+  --textLight: #686c74;
+  --textSecondary: #6f7585;
+  --textOverlay: #fff;
+  --textDisabled: #43454e;
+  --textError: #eb0000;
+  --textSevere: #da291c;
+  --textValid: #34c759;
+  --alertLevel1: #ba0d00;
+  --alertLevel2: #e6731f;
+  --alertLevel3: #ebbb02;
+  --alertLevel4: #a51ccb;
+  --alertSevere: #ba0d00;
+  --borderDefault: #dedede;
+  --borderLight: #f0f0f0;
+  --borderMedium: #ceced0;
+  --borderDark: #2b2b2b;
+  --borderError: #eb0000;
+  --borderBrand: #1b4de4;
+  --backgroundDefault: #fff;
+  --backgroundLight: #ebecee;
+  --backgroundCard: #fff;
+  --backgroundBrand: #039;
+  --backgroundActive: #1b4de4;
+  --backgroundBrandAccent: #1b4de4;
+  --backgroundInverse: #000;
+  --backgroundOverlay: #fff;
+  --backgroundModalOverlay: #000c;
+  --backgroundShadow: #0003;
+  --backgroundTableBody: #f1f1f1;
+  --backgroundInverseOverlay: #0000008c;
+  --backgroundHeading: #f6f6f6;
+  --backgroundProfileIcon: #05336b;
+  --backgroundCaution: #e02020;
+  --buttonBackground: #fff;
+  --buttonInactive: #dee0e3;
+  --buttonText: #1b4de4;
+  --primaryButtonBackground: #1b4de4;
+  --primaryButtonBgDisabled: #ebecee;
+  --primaryButtonText: #fff;
+  --primaryButtonTextDisabled: #686c74;
+  --secondaryButtonBackground: #fff;
+  --secondaryButtonText: #1b4de4;
+  --buttonTrack: #6f7585;
+  --buttonThumb: #fff;
+  --buttonDisabled: #b1b1b1;
+  --primaryButton1Background: #1b4de4;
+  --primaryButton1BgDisabled: #ebecee;
+  --primaryButton1BgFocus: #039;
+  --primaryButton1Text: #fff;
+  --primaryButton1TextDisabled: #6f7585;
+  --secondaryButton1Background: #fff;
+  --secondaryButton1BgDisabled: #dee0e3;
+  --secondaryButton1BgFocus: #e7ecfc;
+  --secondaryButton1Text: #1b4de4;
+  --secondaryButton1TextDisabled: #6f7585;
+  --ghostButton1BgFocus: #f4f4f5;
+  --ghostButton1Text: #1b4de4;
+  --ghostButton1TextDisabled: #6f7585;
+  --iconLight: #fff;
+  --iconDark: #000;
+  --iconInactiveGray: #ceced0;
+  --iconSuccess: #25bef7;
+  --iconGray: #ceced0;
+  --module-rail-padding: 26px;
+  --module-content-padding: 10px 16px;
+  color: var(--textDefault);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background: #005985;
+  padding: 10px 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__svg {
+  width: 80px;
+  height: 80px;
+  background: #6d98b4;
+  color: #fff;
+}
+
+.logo__text {
+  font-size: 24px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.search input[type="text"] {
+  width: 400px;
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  background: #427a9e;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.search {
+  float: right;
+  margin: 25px 0px;
+}
+
+.search button {
+  background-color: rgb(0, 88, 133);
+  color: #f2f2f2;
+  float: right;
+  padding: 10px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.location {
+  margin: 25px 0;
+}
+
+.location span {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 20px;
+}
+
+/** ----------FINISHED HEADER --------------  */
+
+.main {
+  background: linear-gradient(180deg, #3983a8, #d8edee);
+  padding-top: 50px;
+  height: 1000px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #063650;
+  height: 50px;
+}
+
+.link {
+  margin: 0 50px;
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  border: none;
+}
+
+.link:hover {
+  border-bottom: 3px solid #fff;
+}
+
+/** ------------FINISHED BUTTON BLOCK-------------  */
+
+.weatherCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 50px;
+  width: 700px;
+  font-size: 24px;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 20px;
+}
+
+.cardHeader {
+  border-radius: 20px 20px 0 0;
+  background: #214f5c;
+  padding: 20px;
+}
+
+.cardBody {
+  border-radius: 0 0 20px 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    53deg,
+    #208bad,
+    #f2f2f276,
+    #5fc2d7,
+    #f2f2f276,
+    #5fc2d7
+  );
+}
+
+.tempBlock {
+  display: flex;
+  flex-direction: column;
+  font-size: 42px;
+}
